@@ -14,6 +14,7 @@ export default function SearchBar() {
         inputRef.current.value = '';
         inputRef.current.blur();
         history.push(`/search?q=${term}`);
+        setTerm('');
     }
     return (
         <div className='searchBar'>

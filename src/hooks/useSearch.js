@@ -26,13 +26,17 @@ export const useSearch = (collection) => {
 
             let arr = [];
 
-            results.forEach(doc => {
-                arr.push(doc.data());
+            results.filter(item => {
+                const i = arr.findIndex(x => (x.id === item.id));
+                if (i <= -1) {
+                    arr.push(item.data());
+                }
+                return null;
             });
 
             setLoading(false);
             setError(null);
-            setData([...new Set(arr)]);
+            setData(arr);
 
         } catch (err) {
             setLoading(false);
