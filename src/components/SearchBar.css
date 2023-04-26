@@ -1,0 +1,28 @@
+.searchBar form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchBar form img {
+    filter: invert(100%);
+    cursor: pointer;
+    border: 2px solid #000;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.searchBar form img:hover {
+    filter: invert(10%);
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.searchBar input {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.searchBar input:focus {
+    outline: 2px solid #f5f5f5;
+}

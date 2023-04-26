@@ -1,0 +1,11 @@
+.App {
+  min-height: 100%;
+}
+
+.App.dark {
+  background: #1B1212;
+}
+
+.side-padd {
+  padding: 0 20px;
+}
